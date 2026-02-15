@@ -837,11 +837,10 @@ oracle-ai-mcp-migration/
 │       └── mcp_sqlcl_wrapper.sh       ← SQLcl Wrapper (JCEKS, env isolation)
 │
 ├── config/
-│   ├── oracle/
-│   │   ├── db_home_fs_26ai.rsp        ← Installation response file
-│   │   ├── grid_restart_26ai.rsp
-│   │   ├── db_home_asm_26ai.rsp
-│   │   └── sqlnet.ora.template        ← WALLET_LOCATION (for OCI/terminal)
+│   ├── db_home_fs_26ai.rsp        ← Installation response file
+│   ├── grid_restart_26ai.rsp
+│   ├── db_home_asm_26ai.rsp
+│   └── sqlnet.ora.template        ← WALLET_LOCATION (for OCI/terminal)
 │
 └── docs/
     ├── security.md                    
