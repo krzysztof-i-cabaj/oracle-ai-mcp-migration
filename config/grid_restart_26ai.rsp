@@ -1,0 +1,32 @@
+# =============================================================================
+# Nazwa skryptu / Script name: grid_restart_26ai.rsp
+# Autor / Author: KCB Kris
+# Opis / Description: 
+# [PL] Plik odpowiedzi dla instalacji Grid Infrastructure (Oracle Restart) 26ai.
+# Konfiguruje ASM i usługi HA dla pojedynczego serwera.
+# [EN] Response file for Grid Infrastructure (Oracle Restart) 26ai installation.
+# Configures ASM and HA services for a standalone server.
+# Wersja Oracle / Oracle version: 26ai
+# =============================================================================
+# Cel skryptu / Script purpose:
+# [PL] Automatyczna konfiguracja instancji +ASM, grup dyskowych i procesu ohasd.
+# [EN] Automated configuration of +ASM instance, diskgroups and ohasd process.
+# =============================================================================
+
+oracle.install.responseFileVersion=/oracle/install/rspfmt_crsinstall_response_schema_v26.0.0
+# [PL] Instalacja w trybie Oracle Restart (Single Instance HA)
+# [EN] Installation in Oracle Restart mode (Single Instance HA)
+oracle.install.option=HA_CONFIG
+ORACLE_BASE=/u01/app/grid
+oracle.install.asm.OSDBA=asmdba
+oracle.install.asm.OSOPER=asmoper
+oracle.install.asm.OSASM=asmadmin
+# [PL] Konfiguracja grupy dyskowej DATA (External Redundancy zakłada redundancję na poziomie macierzy)
+# [EN] DATA diskgroup configuration (External Redundancy assumes storage-level redundancy)
+oracle.install.asm.diskGroup.name=DATA
+oracle.install.asm.diskGroup.redundancy=EXTERNAL
+oracle.install.asm.diskGroup.AUSize=4
+# [PL] Ścieżki dysków dostarczone przez ASMLib lub AFD (Oracle ASM Filter Driver)
+# [EN] Disk paths provided by ASMLib or AFD
+oracle.install.asm.diskGroup.disks=/dev/oracleafd/disks/DATA*
+oracle.install.asm.configureGIMRDataDG=false

@@ -1,0 +1,23 @@
+# =============================================================================
+# Nazwa skryptu / Script name: db_home_asm_26ai.rsp
+# Autor / Author: KCB Kris
+# Opis / Description: 
+# [PL] Plik odpowiedzi instalacji tylko oprogramowania bazy danych z integracją ASM.
+# [EN] Response file for database software only installation with ASM integration.
+# =============================================================================
+
+oracle.install.responseFileVersion=/oracle/install/rspfmt_dbinstall_response_schema_v26.0.0
+# [PL] Instalujemy tylko software. Bazę utworzymy później przez DBCA.
+# [EN] Install software only. Database will be created later via DBCA.
+oracle.install.option=INSTALL_DB_SWONLY
+UNIX_GROUP_NAME=oinstall
+INVENTORY_LOCATION=/u01/app/oraInventory
+ORACLE_HOME=/u01/app/oracle/product/26.0.0/dbhome_1
+ORACLE_BASE=/u01/app/oracle
+oracle.install.db.InstallEdition=EE
+oracle.install.db.OSDBA_GROUP=dba
+oracle.install.db.OSOPER_GROUP=oper
+oracle.install.db.OSBACKUPDBA_GROUP=backupdba
+oracle.install.db.OSDGDBA_GROUP=dgdba
+oracle.install.db.OSKMDBA_GROUP=kmdba
+oracle.install.db.OSRACDBA_GROUP=racdba
