@@ -840,19 +840,13 @@ oracle-ai-mcp-migration/
 │       └── mcp_sqlcl_wrapper.sh       ← Wrapper SQLcl (JCEKS, izolacja env)
 │
 ├── config/
-│   ├── oracle/
-│   │   ├── db_home_fs_26ai.rsp        ← Plik odpowiedzi instalacji
-│   │   ├── listener.ora.template      ← Bez danych wrażliwych
-│   │   ├── tnsnames.ora.template
-│   │   └── sqlnet.ora.template        ← WALLET_LOCATION (dla OCI/terminala)
-│   │
-│   └── mcp/
-│       ├── vscode-mcp-config.json     ← Konfiguracja VSCode (JCEKS: ai-cdb1/ai-cdb2)
-│       └── claude-desktop-config.json
+│   ├── db_home_fs_26ai.rsp        ← Plik odpowiedzi instalacji
+│   ├── grid_restart_26ai.rsp
+│   ├── db_home_asm_26ai.rsp
+│   └── sqlnet.ora.template        ← WALLET_LOCATION (dla OCI/terminala)
 │
 └── docs/
-    ├── architecture.md
-    ├── security.md                    ← JCEKS vs Wallet — deep dive
+    ├── security.md                    
     └── troubleshooting.md
 ```
 
