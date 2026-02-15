@@ -818,10 +818,7 @@ SELECT name FROM v$pdbs WHERE name='HR_PDB';  -- No rows selected ✅
 oracle-ai-mcp-migration/
 │
 ├── README.md                          ← This file
-├── LICENSE
 ├── .gitignore                         ← Protects wallet, passwords, *.dbf files
-├── CONTRIBUTING.md
-├── CHANGELOG.md
 │
 ├── scripts/
 │   ├── installation/
@@ -842,17 +839,12 @@ oracle-ai-mcp-migration/
 ├── config/
 │   ├── oracle/
 │   │   ├── db_home_fs_26ai.rsp        ← Installation response file
-│   │   ├── listener.ora.template      ← No sensitive data
-│   │   ├── tnsnames.ora.template
+│   │   ├── grid_restart_26ai.rsp
+│   │   ├── db_home_asm_26ai.rsp
 │   │   └── sqlnet.ora.template        ← WALLET_LOCATION (for OCI/terminal)
-│   │
-│   └── mcp/
-│       ├── vscode-mcp-config.json     ← VSCode config (JCEKS: ai-cdb1/ai-cdb2)
-│       └── claude-desktop-config.json
 │
 └── docs/
-    ├── architecture.md
-    ├── security.md                    ← JCEKS vs Wallet — deep dive
+    ├── security.md                    
     └── troubleshooting.md
 ```
 
