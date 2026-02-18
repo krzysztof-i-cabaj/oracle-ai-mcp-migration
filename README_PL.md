@@ -11,6 +11,15 @@
 
 ---
 
+> **🔥 AKTUALIZACJA (18.02.2026): Mamy NATYWNE wsparcie dla Oracle Wallet!**
+>
+> Podczas gdy główna gałąź repozytorium demonstruje solidne **obejście (workaround) oparte na JCEKS** dla GitHub Copilot, opracowałem inżynierską poprawkę protokołu, która umożliwia **Claude Code** bezpośrednie i bezpieczne korzystanie z **Natywnego Oracle Wallet (SEPS)**.
+>
+> 🚀 **Sprawdź to przełomowe rozwiązanie tutaj:**
+> 👉 **[Przejdź do v2: Claude Code + Naprawa Natywnego Walleta i Proxy Protokołu](./claude-mcp-fix/)**
+
+---
+
 ## 📖 Spis Treści
 
 - [O projekcie](#-o-projekcie)

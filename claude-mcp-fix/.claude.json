@@ -1,0 +1,33 @@
+{
+...
+...
+...
+  "mcpServers": {
+    "oracle-cdb1": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "-u",
+        "/home/oracle/mcp_jsonlines_fix.py",
+        "/@CDB1",
+        "-mcp"
+      ],
+      "env": {
+        "WALLET_LOCATION": "/home/oracle/wallet"
+      }
+    },
+    "oracle-cdb2": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "-u",
+        "/home/oracle/mcp_jsonlines_fix.py",
+        "/@CDB2",
+        "-mcp"
+      ],
+      "env": {
+        "WALLET_LOCATION": "/home/oracle/wallet"
+      }
+    }
+  },
+  "sonnet1m45MigrationComplete": true,
+  "cachedExtraUsageDisabledReason": null
+}

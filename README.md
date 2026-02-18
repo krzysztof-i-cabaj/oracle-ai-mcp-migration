@@ -11,6 +11,15 @@
 
 ---
 
+> **🔥 UPDATE (2026-02-18): NATIVE Oracle Wallet Support Achieved!**
+>
+> While the main branch demonstrates a robust **JCEKS workaround** for GitHub Copilot, I have successfully engineered a protocol fix that allows **Claude Code** to use the **Native Oracle Wallet (SEPS)** directly.
+>
+> 🚀 **Check the breakthrough solution here:**
+> 👉 **[Go to v2: Claude Code + Native Wallet Fix & Protocol Proxy](./claude-mcp-fix/)**
+
+---
+
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
