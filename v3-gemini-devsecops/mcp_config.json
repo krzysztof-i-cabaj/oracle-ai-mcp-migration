@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+        "oracle-cdb1": {
+            "command": "/home/oracle/mcp_sqlcl_wrapper.sh",
+            "args": [
+                "-mcp",
+                "/@CDB1"
+            ]
+        },
+        "oracle-cdb2": {
+            "command": "/home/oracle/mcp_sqlcl_wrapper.sh",
+            "args": [
+                "-mcp",
+                "/@CDB2"
+            ]
+        },
+        "oracle-hr-pdb": {
+            "command": "/home/oracle/mcp_sqlcl_wrapper.sh",
+            "args": [
+                "-mcp",
+                "/@HR_PDB"
+            ]
+        }
+    }
+}

@@ -20,6 +20,15 @@
 
 ---
 
+> **🛡️ AKTUALIZACJA (24.02.2026): Część 3 - Autonomiczny DevSecOps z Gemini 3 Pro!**
+>
+> Wprowadziłem do gry trzeciego Agenta (Google Antigravity/Gemini). Tym razem Agent otrzymał krytyczne zadanie biznesowe: bezpieczny **Hot Clone produkcyjnej bazy danych** połączony z natychmiastowym, **wewnętrznym maskowaniem danych wrażliwych (PII / RODO)**, bez wycieku danych do chmury.
+>
+> 🚀 **Sprawdź skrypty i przebieg operacji tutaj:**
+> 👉 **[Przejdź do v3: Gemini + DevSecOps (Klonowanie i Maskowanie Danych)](./v3-gemini-devsecops/)**
+
+---
+
 ## 📖 Spis Treści
 
 - [O projekcie](#-o-projekcie)
